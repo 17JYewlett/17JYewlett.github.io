@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Joseph Yewlett — Software Developer</title>
   <meta name="description" content="Computer Science MSci student at Loughborough University. Hackathon winner building practical software in Python, Java, PHP and the web.">
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f4f1ea" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0c0b" media="(prefers-color-scheme: dark)">
   <meta name="color-scheme" content="light dark">
   <link rel="canonical" href="https://17jyewlett.github.io/">
 
@@ -32,23 +32,37 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="nav">
+  <header class="nav" id="nav">
     <div class="container nav__inner">
-      <a class="nav__brand" href="#top" aria-label="Joseph Yewlett, home">JY</a>
-      <nav aria-label="Primary">
-        <ul class="nav__links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <a class="nav__brand" href="#top">Joseph Yewlett</a>
+
+      <nav class="nav__menu" id="menu" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
       </nav>
+
+      <div class="nav__icons">
+        <a class="icon-btn" href="https://github.com/17JYewlett" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/joseph-yewlett-7574bb178" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a class="icon-btn" href="mailto:joseph.yewlett.careers@proton.me" aria-label="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M3 5.5h18v13H3z M3.5 6l8.5 7 8.5-7"/></svg>
+        </a>
+        <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+          <span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -56,163 +70,201 @@
     <!-- Hero -->
     <section class="hero" id="top">
       <div class="container">
-        <p class="eyebrow">Computer Science MSci · Loughborough University</p>
-        <h1 class="hero__title">Joseph Yewlett</h1>
-        <p class="hero__pitch">I build working software fast — from hackathon-winning prototypes to full-stack web apps.</p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#projects">View projects</a>
-          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        <p class="status rise"><span class="status__dot" aria-hidden="true"></span>Seeking placements &amp; internships</p>
+        <h1 class="hero__title rise">Joseph<br><em>Yewlett</em></h1>
+        <div class="hero__foot rise">
+          <p class="hero__pitch">Software developer and Computer Science MSci student at Loughborough University. I build working products fast, from hackathon-winning prototypes to full-stack web apps.</p>
+          <a class="link-arrow" href="#work">Selected work <span aria-hidden="true">↓</span></a>
         </div>
       </div>
     </section>
 
     <!-- About -->
     <section class="section" id="about" aria-labelledby="about-title">
-      <div class="container grid-2">
-        <h2 class="section__title" id="about-title">About</h2>
-        <div class="prose">
-          <p>I'm a second-year Computer Science MSci student at Loughborough University with a strong foundation in software development across multiple languages. I like building things that work, especially under a deadline.</p>
-          <p>I won first place at the Loughborough EDI AI Hackathon, and I've competed at ETH Oxford, Hack Sussex and CS50 London. I have practical experience with version control, cloud deployments and agile teamwork, and I speak French at B2–C1 level.</p>
+      <div class="container split">
+        <header class="section__head">
+          <span class="section__num">01</span>
+          <h2 id="about-title">About</h2>
+        </header>
 
-          <dl class="skills">
+        <div class="section__body">
+          <p class="lede reveal">I like building things that work, and I do my best work <em>under a deadline</em>.</p>
+          <div class="prose reveal">
+            <p>I'm a second-year Computer Science MSci student at Loughborough University, working across Python, Java, PHP, C and the web. I won first place at the Loughborough EDI AI Hackathon and have competed at ETH Oxford, Hack Sussex and CS50 London.</p>
+            <p>Outside code, I tutor students in programming, I've done IT support for an organisation of 5,000 staff, and I speak French at B2–C1 level after studying at Sciences Po in Paris.</p>
+          </div>
+
+          <div class="facts reveal">
             <div>
-              <dt>Languages</dt>
-              <dd>Python, Java, PHP, C, C++, SQL, JavaScript, HTML/CSS, Kotlin, Swift</dd>
+              <span class="facts__num">1st</span>
+              <span class="facts__label">EDI AI Hackathon 2025</span>
             </div>
             <div>
-              <dt>Frameworks &amp; tools</dt>
-              <dd>React, Flask, Git, Google Cloud, AWS, Arduino</dd>
+              <span class="facts__num">4</span>
+              <span class="facts__label">Hackathons &amp; events</span>
             </div>
             <div>
-              <dt>Fundamentals</dt>
-              <dd>OOP, data structures, algorithms, complexity analysis, low-level C</dd>
+              <span class="facts__num">5+</span>
+              <span class="facts__label">Years writing Python</span>
             </div>
-          </dl>
+          </div>
+
+          <div class="skills reveal">
+            <h3 class="label">Toolkit</h3>
+            <ul class="tags">
+              <li>Python</li><li>Java</li><li>PHP</li><li>C / C++</li><li>SQL</li>
+              <li>JavaScript</li><li>React</li><li>Flask</li><li>Kotlin</li><li>Swift</li>
+              <li>Git</li><li>Google Cloud</li><li>AWS</li><li>Arduino</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section class="section" id="projects" aria-labelledby="projects-title">
+    <!-- Work -->
+    <section class="section" id="work" aria-labelledby="work-title">
       <div class="container">
-        <h2 class="section__title" id="projects-title">Projects</h2>
-        <ul class="cards">
-          <li class="card">
-            <p class="card__badge">🏆 1st place · Loughborough EDI AI Hackathon 2025</p>
-            <h3 class="card__title">Voice Accent Bias Changer</h3>
-            <p class="card__desc">An AI voice tool that changes a speaker's accent using ElevenLabs, built to tackle accent bias. Made with a teammate over one hackathon.</p>
-            <ul class="stack"><li>ElevenLabs API</li><li>AI</li></ul>
-            <div class="card__links">
-              <a href="https://github.com/17JYewlett/Loughborough-AI-EDI" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+        <header class="section__head section__head--row">
+          <span class="section__num">02</span>
+          <h2 id="work-title">Selected work</h2>
+        </header>
+
+        <ol class="work">
+          <li class="work__item work__item--feature reveal">
+            <span class="work__index">01</span>
+            <div class="work__main">
+              <p class="work__meta"><span class="award">1st place</span> Loughborough EDI AI Hackathon · 2025</p>
+              <h3 class="work__title">Voice Accent Bias Changer</h3>
+              <p class="work__desc">An AI voice tool that changes a speaker's accent using ElevenLabs, built to tackle accent bias. Made with a teammate over one hackathon.</p>
+              <ul class="work__stack"><li>ElevenLabs API</li><li>AI</li></ul>
+            </div>
+            <a class="work__link" href="https://github.com/17JYewlett/Loughborough-AI-EDI" target="_blank" rel="noopener" aria-label="Voice Accent Bias Changer on GitHub">GitHub <span aria-hidden="true">↗</span></a>
+          </li>
+
+          <li class="work__item reveal">
+            <span class="work__index">02</span>
+            <div class="work__main">
+              <p class="work__meta">ETH Oxford · 2025</p>
+              <h3 class="work__title">Blockchain Tennis Booking</h3>
+              <p class="work__desc">A decentralised court-booking system that records reservations on-chain for transparent, tamper-proof scheduling.</p>
+              <ul class="work__stack"><li>Python</li><li>Blockchain</li></ul>
+            </div>
+            <a class="work__link" href="https://github.com/17JYewlett/OxfordETH" target="_blank" rel="noopener" aria-label="Blockchain Tennis Booking on GitHub">GitHub <span aria-hidden="true">↗</span></a>
+          </li>
+
+          <li class="work__item reveal">
+            <span class="work__index">03</span>
+            <div class="work__main">
+              <p class="work__meta">Hack Sussex · 2025</p>
+              <h3 class="work__title">Blockchain Insurance Tracker</h3>
+              <p class="work__desc">A system for tracking insurance records on a blockchain, giving policyholders and insurers a shared, verifiable history.</p>
+              <ul class="work__stack"><li>HTML</li><li>Blockchain</li></ul>
+            </div>
+            <a class="work__link" href="https://github.com/17JYewlett/HackSussex25" target="_blank" rel="noopener" aria-label="Blockchain Insurance Tracker on GitHub">GitHub <span aria-hidden="true">↗</span></a>
+          </li>
+
+          <li class="work__item reveal">
+            <span class="work__index">04</span>
+            <div class="work__main">
+              <p class="work__meta">University project</p>
+              <h3 class="work__title">Consultant Booking Website</h3>
+              <p class="work__desc">A dynamic website for viewing consultant availability and booking appointments, backed by a relational database.</p>
+              <ul class="work__stack"><li>PHP</li><li>SQL</li><li>HTML/CSS</li></ul>
             </div>
           </li>
 
-          <li class="card">
-            <p class="card__badge">ETH Oxford 2025</p>
-            <h3 class="card__title">Blockchain Tennis Booking</h3>
-            <p class="card__desc">A decentralised court-booking system that records reservations on-chain for transparent, tamper-proof scheduling.</p>
-            <ul class="stack"><li>Python</li><li>Blockchain</li></ul>
-            <div class="card__links">
-              <a href="https://github.com/17JYewlett/OxfordETH" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+          <li class="work__item reveal">
+            <span class="work__index">05</span>
+            <div class="work__main">
+              <p class="work__meta">University project</p>
+              <h3 class="work__title">Performance Hall Event Manager</h3>
+              <p class="work__desc">An object-oriented desktop app for browsing events, adding tickets to a basket and completing purchases.</p>
+              <ul class="work__stack"><li>Java</li><li>OOP</li><li>GUI</li></ul>
             </div>
           </li>
 
-          <li class="card">
-            <p class="card__badge">Hack Sussex 2025</p>
-            <h3 class="card__title">Blockchain Insurance Tracker</h3>
-            <p class="card__desc">A system for tracking insurance records on a blockchain, giving policyholders and insurers a shared, verifiable history.</p>
-            <ul class="stack"><li>HTML</li><li>Blockchain</li></ul>
-            <div class="card__links">
-              <a href="https://github.com/17JYewlett/HackSussex25" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+          <li class="work__item reveal">
+            <span class="work__index">06</span>
+            <div class="work__main">
+              <p class="work__meta">Personal project</p>
+              <h3 class="work__title">Fruit Frenzy</h3>
+              <p class="work__desc">A Fruit Ninja-style 2D game with visual effects, built with OOP patterns and JSON for configuration and high scores.</p>
+              <ul class="work__stack"><li>Python</li><li>Pygame</li><li>JSON</li></ul>
             </div>
           </li>
-
-          <li class="card">
-            <h3 class="card__title">Consultant Booking Website</h3>
-            <p class="card__desc">A dynamic website with an intuitive interface for viewing consultant availability and booking appointments, backed by a relational database.</p>
-            <ul class="stack"><li>PHP</li><li>SQL</li><li>HTML/CSS</li></ul>
-          </li>
-
-          <li class="card">
-            <h3 class="card__title">Performance Hall Event Manager</h3>
-            <p class="card__desc">An object-oriented desktop GUI app that lets users browse events, add tickets to a basket and complete purchases.</p>
-            <ul class="stack"><li>Java</li><li>OOP</li><li>GUI</li></ul>
-          </li>
-
-          <li class="card">
-            <h3 class="card__title">Fruit Frenzy</h3>
-            <p class="card__desc">A Fruit Ninja-style 2D game with visual effects, built using OOP patterns and JSON for configuration and high-score storage.</p>
-            <ul class="stack"><li>Python</li><li>Pygame</li><li>JSON</li></ul>
-          </li>
-        </ul>
+        </ol>
       </div>
     </section>
 
     <!-- Experience -->
     <section class="section" id="experience" aria-labelledby="experience-title">
-      <div class="container grid-2">
-        <h2 class="section__title" id="experience-title">Experience</h2>
-        <div>
-          <ol class="timeline">
-            <li class="timeline__item">
-              <div class="timeline__head">
-                <h3>Computer Science Tutor</h3>
-                <span class="timeline__date">Feb 2025 – Present</span>
+      <div class="container split">
+        <header class="section__head">
+          <span class="section__num">03</span>
+          <h2 id="experience-title">Experience</h2>
+        </header>
+
+        <div class="section__body">
+          <ol class="roles">
+            <li class="role reveal">
+              <span class="role__date">2025 — Now</span>
+              <div>
+                <h3 class="role__title">Computer Science Tutor</h3>
+                <p class="role__org">Freelance</p>
+                <p class="role__desc">Teaching students aged 9–18 Python, pseudocode and computational thinking.</p>
               </div>
-              <p class="timeline__org">Freelance</p>
-              <p>Teaching students aged 9–18 Python, pseudocode and computational thinking.</p>
             </li>
-            <li class="timeline__item">
-              <div class="timeline__head">
-                <h3>Amazon Step-Up Programme</h3>
-                <span class="timeline__date">Jul 2025</span>
+            <li class="role reveal">
+              <span class="role__date">Jul 2025</span>
+              <div>
+                <h3 class="role__title">Amazon Step-Up Programme</h3>
+                <p class="role__org">Amazon Corporate Office, Manchester</p>
+                <p class="role__desc">Worked in a team under time pressure to conceptualise, cost and pitch a new product to senior buyers.</p>
               </div>
-              <p class="timeline__org">Amazon Corporate Office, Manchester</p>
-              <p>Worked in a team under time pressure to conceptualise, cost and pitch a new product to senior buyers, and completed professional networking training.</p>
             </li>
-            <li class="timeline__item">
-              <div class="timeline__head">
-                <h3>Second Line IT Support</h3>
-                <span class="timeline__date">Jul 2023</span>
+            <li class="role reveal">
+              <span class="role__date">2025 — Now</span>
+              <div>
+                <h3 class="role__title">Distributor</h3>
+                <p class="role__org">Utility Warehouse</p>
+                <p class="role__desc">Marketing broadband, energy and mobile packages locally while managing customer relationships and support.</p>
               </div>
-              <p class="timeline__org">Leicestershire County Council</p>
-              <p>Managed service tickets and resolved technical issues across an organisation of around 5,000 staff, supporting users of all technical levels.</p>
             </li>
-            <li class="timeline__item">
-              <div class="timeline__head">
-                <h3>Distributor</h3>
-                <span class="timeline__date">Feb 2025 – Present</span>
+            <li class="role reveal">
+              <span class="role__date">Jul 2023</span>
+              <div>
+                <h3 class="role__title">Second Line IT Support</h3>
+                <p class="role__org">Leicestershire County Council</p>
+                <p class="role__desc">Resolved service tickets and technical issues across an organisation of around 5,000 staff.</p>
               </div>
-              <p class="timeline__org">Utility Warehouse</p>
-              <p>Marketing broadband, energy and mobile packages locally while managing customer relationships and support issues.</p>
             </li>
           </ol>
 
-          <h3 class="subhead">Education</h3>
-          <ol class="timeline">
-            <li class="timeline__item">
-              <div class="timeline__head">
-                <h3>Computer Science MSci</h3>
-                <span class="timeline__date">2024 – Present</span>
+          <h3 class="label label--spaced reveal">Education</h3>
+          <ol class="roles">
+            <li class="role reveal">
+              <span class="role__date">2024 — Now</span>
+              <div>
+                <h3 class="role__title">Computer Science MSci</h3>
+                <p class="role__org">Loughborough University</p>
+                <p class="role__desc">Year 1: 2:1. Software Engineering, Embedded Systems, Web Programming, OOP and Team Projects.</p>
               </div>
-              <p class="timeline__org">Loughborough University</p>
-              <p>Year 1: 2:1. Modules include Software Engineering, Embedded Systems, Web Programming, OOP and Team Projects.</p>
             </li>
-            <li class="timeline__item">
-              <div class="timeline__head">
-                <h3>French B2–C1</h3>
-                <span class="timeline__date">Jun – Jul 2026</span>
+            <li class="role reveal">
+              <span class="role__date">Summer 2026</span>
+              <div>
+                <h3 class="role__title">French, B2–C1</h3>
+                <p class="role__org">Sciences Po, Paris</p>
+                <p class="role__desc">Intensive language programme; DALF C1 planned for late 2026 / early 2027.</p>
               </div>
-              <p class="timeline__org">Sciences Po, Paris</p>
-              <p>Intensive summer language course; DALF C1 planned for late 2026 / early 2027.</p>
             </li>
-            <li class="timeline__item">
-              <div class="timeline__head">
-                <h3>A Levels</h3>
-                <span class="timeline__date">2017 – 2024</span>
+            <li class="role reveal">
+              <span class="role__date">2017 — 2024</span>
+              <div>
+                <h3 class="role__title">A Levels</h3>
+                <p class="role__org">De Lisle College</p>
+                <p class="role__desc">Computer Science (A), Mathematics, Physics, French. Extended Project: A*.</p>
               </div>
-              <p class="timeline__org">De Lisle College</p>
-              <p>Computer Science (A), Mathematics, Physics, French. EPQ: A* (46/50).</p>
             </li>
           </ol>
         </div>
@@ -220,24 +272,55 @@
     </section>
 
     <!-- Contact -->
-    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
-      <div class="container contact">
-        <h2 class="contact__title" id="contact-title">Let's talk.</h2>
-        <p class="contact__lead">I'm looking for software engineering placements and internships. If you have an opportunity or just want to chat, my inbox is open.</p>
-        <a class="btn btn--primary btn--lg" href="mailto:joseph.yewlett.careers@proton.me">joseph.yewlett.careers@proton.me</a>
-        <ul class="socials">
-          <li><a href="https://github.com/17JYewlett" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/joseph-yewlett-7574bb178" target="_blank" rel="noopener">LinkedIn</a></li>
-        </ul>
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__head section__head--row">
+          <span class="section__num">04</span>
+          <span class="section__kicker">Contact</span>
+        </header>
+        <h2 class="contact__title reveal" id="contact-title">Let's build<br><em>something.</em></h2>
+        <div class="contact__foot reveal">
+          <a class="contact__email" href="mailto:joseph.yewlett.careers@proton.me">joseph.yewlett.careers@proton.me</a>
+          <ul class="contact__links">
+            <li><a href="https://github.com/17JYewlett" target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/joseph-yewlett-7574bb178" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p>© 2026 Joseph Yewlett</p>
-      <p>Loughborough, UK</p>
+      <span>© 2026 Joseph Yewlett</span>
+      <span>Loughborough, United Kingdom</span>
     </div>
   </footer>
+
+  <script>
+    // Mobile menu
+    const nav = document.getElementById('nav');
+    const btn = document.getElementById('menu-btn');
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open);
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+    document.querySelectorAll('#menu a').forEach(a => a.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+    }));
+
+    // Reveal on scroll
+    if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js-reveal');
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -8% 0px' });
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    }
+  </script>
 </body>
 </html>
