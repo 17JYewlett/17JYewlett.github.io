@@ -33,6 +33,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    try { const t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -44,7 +47,8 @@
 
       <nav class="nav__menu" id="menu" aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#work">Work</a>
+        <a href="#interests">Interests</a>
+        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -59,6 +63,10 @@
         <a class="icon-btn" href="mailto:joseph.yewlett.careers@proton.me" aria-label="Email">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M3 5.5h18v13H3z M3.5 6l8.5 7 8.5-7"/></svg>
         </a>
+        <button class="icon-btn theme-btn" id="theme-btn" type="button" aria-label="Switch to dark mode">
+          <svg class="theme-btn__moon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+          <svg class="theme-btn__sun" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></g></svg>
+        </button>
         <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
           <span></span><span></span>
         </button>
@@ -74,7 +82,10 @@
         <h1 class="hero__title rise">Joseph<br><em>Yewlett</em></h1>
         <div class="hero__foot rise">
           <p class="hero__pitch">Software developer and Computer Science MSci student at Loughborough University. I build working products fast, from hackathon-winning prototypes to full-stack web apps.</p>
-          <a class="link-arrow" href="#work">Selected work <span aria-hidden="true">↓</span></a>
+          <div class="hero__ctas">
+            <a class="pill-btn pill-btn--solid" href="cv-joseph-yewlett.pdf" target="_blank" rel="noopener">Download CV <span aria-hidden="true">↓</span></a>
+            <a class="link-arrow" href="#projects">Projects <span aria-hidden="true">↓</span></a>
+          </div>
         </div>
       </div>
     </section>
@@ -121,76 +132,62 @@
       </div>
     </section>
 
-    <!-- Work -->
-    <section class="section" id="work" aria-labelledby="work-title">
+    <!-- Interests -->
+    <section class="section" id="interests" aria-labelledby="interests-title">
       <div class="container">
         <header class="section__head section__head--row">
           <span class="section__num">02</span>
-          <h2 id="work-title">Selected work</h2>
+          <h2 id="interests-title">Interests &amp; motivations</h2>
+        </header>
+
+        <ul class="interests">
+          <li class="interest reveal">
+            <span class="interest__num">i.</span>
+            <h3 class="interest__title">Language Learning</h3>
+            <p class="interest__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </li>
+          <li class="interest reveal">
+            <span class="interest__num">ii.</span>
+            <h3 class="interest__title">Environmental Sustainability</h3>
+            <p class="interest__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </li>
+          <li class="interest reveal">
+            <span class="interest__num">iii.</span>
+            <h3 class="interest__title">Political Stability</h3>
+            <p class="interest__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__head section__head--row">
+          <span class="section__num">03</span>
+          <h2 id="projects-title">Projects</h2>
         </header>
 
         <ol class="work">
-          <li class="work__item work__item--feature reveal">
+          <li class="work__item reveal">
             <span class="work__index">01</span>
-            <div class="work__main">
-              <p class="work__meta"><span class="award">1st place</span> Loughborough EDI AI Hackathon · 2025</p>
-              <h3 class="work__title">Voice Accent Bias Changer</h3>
-              <p class="work__desc">An AI voice tool that changes a speaker's accent using ElevenLabs, built to tackle accent bias. Made with a teammate over one hackathon.</p>
-              <ul class="work__stack"><li>ElevenLabs API</li><li>AI</li></ul>
-            </div>
-            <a class="work__link" href="https://github.com/17JYewlett/Loughborough-AI-EDI" target="_blank" rel="noopener" aria-label="Voice Accent Bias Changer on GitHub">GitHub <span aria-hidden="true">↗</span></a>
-          </li>
-
-          <li class="work__item reveal">
-            <span class="work__index">02</span>
-            <div class="work__main">
-              <p class="work__meta">ETH Oxford · 2025</p>
-              <h3 class="work__title">Blockchain Tennis Booking</h3>
-              <p class="work__desc">A decentralised court-booking system that records reservations on-chain for transparent, tamper-proof scheduling.</p>
-              <ul class="work__stack"><li>Python</li><li>Blockchain</li></ul>
-            </div>
-            <a class="work__link" href="https://github.com/17JYewlett/OxfordETH" target="_blank" rel="noopener" aria-label="Blockchain Tennis Booking on GitHub">GitHub <span aria-hidden="true">↗</span></a>
-          </li>
-
-          <li class="work__item reveal">
-            <span class="work__index">03</span>
-            <div class="work__main">
-              <p class="work__meta">Hack Sussex · 2025</p>
-              <h3 class="work__title">Blockchain Insurance Tracker</h3>
-              <p class="work__desc">A system for tracking insurance records on a blockchain, giving policyholders and insurers a shared, verifiable history.</p>
-              <ul class="work__stack"><li>HTML</li><li>Blockchain</li></ul>
-            </div>
-            <a class="work__link" href="https://github.com/17JYewlett/HackSussex25" target="_blank" rel="noopener" aria-label="Blockchain Insurance Tracker on GitHub">GitHub <span aria-hidden="true">↗</span></a>
-          </li>
-
-          <li class="work__item reveal">
-            <span class="work__index">04</span>
-            <div class="work__main">
-              <p class="work__meta">University project</p>
-              <h3 class="work__title">Consultant Booking Website</h3>
-              <p class="work__desc">A dynamic website for viewing consultant availability and booking appointments, backed by a relational database.</p>
-              <ul class="work__stack"><li>PHP</li><li>SQL</li><li>HTML/CSS</li></ul>
-            </div>
-          </li>
-
-          <li class="work__item reveal">
-            <span class="work__index">05</span>
-            <div class="work__main">
-              <p class="work__meta">University project</p>
-              <h3 class="work__title">Performance Hall Event Manager</h3>
-              <p class="work__desc">An object-oriented desktop app for browsing events, adding tickets to a basket and completing purchases.</p>
-              <ul class="work__stack"><li>Java</li><li>OOP</li><li>GUI</li></ul>
-            </div>
-          </li>
-
-          <li class="work__item reveal">
-            <span class="work__index">06</span>
             <div class="work__main">
               <p class="work__meta">Personal project</p>
               <h3 class="work__title">Fruit Frenzy</h3>
               <p class="work__desc">A Fruit Ninja-style 2D game with visual effects, built with OOP patterns and JSON for configuration and high scores.</p>
               <ul class="work__stack"><li>Python</li><li>Pygame</li><li>JSON</li></ul>
             </div>
+          </li>
+
+          <li class="work__item reveal">
+            <span class="work__index">02</span>
+            <div class="work__main">
+              <p class="work__meta">Lorem ipsum · 2026</p>
+              <h3 class="work__title">Lorem Ipsum</h3>
+              <p class="work__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <ul class="work__stack"><li>Lorem</li><li>Ipsum</li><li>Dolor</li></ul>
+            </div>
+            <a class="work__link" href="#" aria-label="Lorem Ipsum on GitHub">GitHub <span aria-hidden="true">↗</span></a>
           </li>
         </ol>
       </div>
@@ -200,7 +197,7 @@
     <section class="section" id="experience" aria-labelledby="experience-title">
       <div class="container split">
         <header class="section__head">
-          <span class="section__num">03</span>
+          <span class="section__num">04</span>
           <h2 id="experience-title">Experience</h2>
         </header>
 
@@ -275,15 +272,17 @@
     <section class="section contact" id="contact" aria-labelledby="contact-title">
       <div class="container">
         <header class="section__head section__head--row">
-          <span class="section__num">04</span>
+          <span class="section__num">05</span>
           <span class="section__kicker">Contact</span>
         </header>
         <h2 class="contact__title reveal" id="contact-title">Let's build<br><em>something.</em></h2>
         <div class="contact__foot reveal">
           <a class="contact__email" href="mailto:joseph.yewlett.careers@proton.me">joseph.yewlett.careers@proton.me</a>
           <ul class="contact__links">
-            <li><a href="https://github.com/17JYewlett" target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a href="cv-joseph-yewlett.pdf" target="_blank" rel="noopener">CV ↓</a></li>
             <li><a href="https://www.linkedin.com/in/joseph-yewlett-7574bb178" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="mailto:joseph.yewlett.careers@proton.me">Email ↗</a></li>
+            <li><a href="https://github.com/17JYewlett" target="_blank" rel="noopener">GitHub ↗</a></li>
           </ul>
         </div>
       </div>
@@ -310,6 +309,24 @@
       nav.classList.remove('is-open');
       btn.setAttribute('aria-expanded', 'false');
     }));
+
+    // Theme toggle
+    const root = document.documentElement;
+    const themeBtn = document.getElementById('theme-btn');
+    const systemDark = matchMedia('(prefers-color-scheme: dark)');
+    const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : systemDark.matches;
+    const syncThemeBtn = () => {
+      themeBtn.setAttribute('aria-label', isDark() ? 'Switch to light mode' : 'Switch to dark mode');
+      document.querySelectorAll('meta[name="theme-color"]').forEach(m => m.content = isDark() ? '#0d0c0b' : '#f4f1ea');
+    };
+    themeBtn.addEventListener('click', () => {
+      const next = isDark() ? 'light' : 'dark';
+      root.dataset.theme = next;
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      syncThemeBtn();
+    });
+    systemDark.addEventListener('change', syncThemeBtn);
+    syncThemeBtn();
 
     // Reveal on scroll
     if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
