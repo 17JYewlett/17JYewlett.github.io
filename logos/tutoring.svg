@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="3 4 58 58" fill="none" stroke="#8c6a3c" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <!-- mortarboard -->
+  <path d="M32 8 6 19l26 11 26-11L32 8Z" fill="#8c6a3c" fill-opacity=".14"/>
+  <path d="M16 23.5v8.5c0 3.6 7.2 6.5 16 6.5s16-2.9 16-6.5v-8.5"/>
+  <path d="M58 19v11"/>
+  <!-- code brackets -->
+  <path d="M22 45l-7 5.5 7 5.5M42 45l7 5.5-7 5.5M35 43.5l-6 14"/>
+</svg>
