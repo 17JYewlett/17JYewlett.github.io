@@ -150,27 +150,6 @@ a { color: inherit; text-decoration: none; }
 
 .nav__controls { display: flex; align-items: center; gap: 8px; }
 
-.lang {
-  display: inline-flex;
-  padding: 1px;
-  border: 1px solid var(--line-strong);
-  border-radius: 999px;
-}
-.lang__btn {
-  min-width: 44px;
-  height: 42px;
-  padding: 0 10px;
-  font: 500 13px/1 var(--sans);
-  letter-spacing: 0.02em;
-  color: var(--muted);
-  background: none;
-  border: 0;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: background-color .2s, color .2s;
-}
-.lang__btn:hover { color: var(--text); }
-.lang__btn[aria-pressed="true"] { background: var(--text); color: var(--bg); }
 
 .icon-btn {
   display: grid;
@@ -413,15 +392,6 @@ a { color: inherit; text-decoration: none; }
   color: var(--faint);
 }
 
-/* ---------- Language switch ---------- */
-/* Text blurs out and resolves in the other language; layout never moves */
-main, .footer {
-  transition: opacity .18s var(--ease-out), filter .18s var(--ease-out);
-}
-.is-switching main, .is-switching .footer {
-  opacity: 0;
-  filter: blur(4px);
-}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
