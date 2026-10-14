@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Joseph Yewlett — Software Developer</title>
-  <meta name="description" content="Second-year Computer Science MSci student at Loughborough University, writing software in Python, Java and for the web. Looking for a software engineering placement or internship.">
+  <meta name="description" content="Third-year Computer Science MSci student at Loughborough University. Looking for a software engineering placement or internship.">
   <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#101113" media="(prefers-color-scheme: dark)">
   <meta name="color-scheme" content="light dark">
@@ -14,7 +14,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Joseph Yewlett">
   <meta property="og:title" content="Joseph Yewlett — Software Developer">
-  <meta property="og:description" content="Second-year Computer Science MSci student at Loughborough University. Looking for a software engineering placement or internship.">
+  <meta property="og:description" content="Third-year Computer Science MSci student at Loughborough University. Looking for a software engineering placement or internship.">
   <meta property="og:url" content="https://17jyewlett.github.io/">
   <meta property="og:image" content="https://17jyewlett.github.io/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -23,7 +23,7 @@
   <meta property="og:locale" content="en_GB">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Joseph Yewlett — Software Developer">
-  <meta name="twitter:description" content="Second-year Computer Science MSci student at Loughborough University. Looking for a software engineering placement or internship.">
+  <meta name="twitter:description" content="Third-year Computer Science MSci student at Loughborough University. Looking for a software engineering placement or internship.">
   <meta name="twitter:image" content="https://17jyewlett.github.io/og-image.png">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -40,7 +40,7 @@
       if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
     } catch (e) {}
   </script>
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -50,9 +50,8 @@
       <a class="nav__brand" href="#top">Joseph Yewlett</a>
 
       <nav class="nav__menu" id="menu" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#interests">Interests</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -74,88 +73,13 @@
     <section class="hero" id="top" aria-label="Introduction">
       <div class="container">
         <h1 class="hero__title">Joseph Yewlett</h1>
-        <p class="hero__pitch">Second-year Computer Science student at Loughborough University. I write software in Python, Java and for the web, and I learn fastest by building.</p>
+        <p class="hero__pitch">Third-year Computer Science MSci student at Loughborough University.</p>
         <p class="hero__status">Looking for a software engineering placement or internship.</p>
         <div class="hero__ctas">
           <a class="btn btn--solid" href="cv-joseph-yewlett.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
-          <a class="btn" href="mailto:joseph.yewlett.careers@proton.me">Email me</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="container split">
-        <h2 class="section__title" id="about-title">About</h2>
-
-        <div class="section__body">
-          <div class="prose">
-            <p class="prose__lead">I'm a second-year Computer Science MSci student at Loughborough University. Most of what I know I've learned by building: university projects in Java and PHP, a game in Pygame, and prototypes put together over hackathon weekends at ETH Oxford, Hack Sussex and Loughborough, where a teammate and I took first place at the EDI AI Hackathon.</p>
-            <p>Away from code, I tutor students aged 9 to 18 in programming, I've worked in second-line IT support at Leicestershire County Council, and I've been learning French for over seven years, most recently at Sciences Po in Paris.</p>
-          </div>
-
-          <dl class="skills">
-            <div>
-              <dt>Languages</dt>
-              <dd>Python, Java, PHP, C, C++, SQL, JavaScript, Kotlin, Swift</dd>
-            </div>
-            <div>
-              <dt>Frameworks &amp; tools</dt>
-              <dd>React, Flask, Git, Google Cloud, AWS, Arduino</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="section" id="projects" aria-labelledby="projects-title">
-      <div class="container split">
-        <h2 class="section__title" id="projects-title">Projects</h2>
-
-        <div class="section__body">
-          <ul class="work">
-            <li class="work__item">
-              <h3 class="work__title">Rediscovering particles using CERN LHC data</h3>
-              <p class="work__meta">Personal project · JupyterLab, Python, ROOT files</p>
-              <p class="work__desc">Using open data from CERN's LHC, I manipulated the data within a notebook to eventually produce clear graphs showing spikes representing specific masses in great accumulations. From this we can deduce different particles, including the Z boson.</p>
-              <a class="text-link" href="https://github.com/17JYewlett/cern_lhc_analysis" target="_blank" rel="noopener">View on GitHub</a>
-            </li>
-
-            <li class="work__item">
-              <h3 class="work__title">Verbatim iOS: an iOS app for language learning</h3>
-              <p class="work__meta">Personal project · Swift, Google Firebase, UI/UX design</p>
-              <p class="work__desc">As a continuation of my Android development journey, I decided to expand the application by fundamentally redesigning and redeveloping it for the Apple ecosystem. In the long term I would like to consider furthering this, but for now this was just a side project. An iOS application for learning languages via exposure. You can read approved ebooks in an interactive reader, and store unknown words as flashcards for later. The app also includes widgets, streaks, notification reminders, support for Apple's Liquid Glass design and more!</p>
-              <span class="work__private">Private repository</span>
-            </li>
-
-            <li class="work__item">
-              <h3 class="work__title">Verbatim: an Android app for language learning</h3>
-              <p class="work__meta">University project · Kotlin, Google Firebase, UI/UX design</p>
-              <p class="work__desc">An Android application for learning languages via exposure. You can read approved ebooks in an interactive reader, and store unknown words as flashcards for later. Works across devices thanks to Firebase.</p>
-              <span class="work__private">Private repository</span>
-            </li>
-
-            <li class="work__item">
-              <h3 class="work__title">Performance Hall Event Manager</h3>
-              <p class="work__meta">University project · Java, Swing, SWT</p>
-              <p class="work__desc">I developed an object-oriented GUI application to browse events, add tickets to a basket and complete purchases in a music hall system, learning how to create GUI applications in Java.</p>
-            </li>
-
-            <li class="work__item">
-              <h3 class="work__title">Fruit Frenzy</h3>
-              <p class="work__meta"><span>Personal project</span> · Python, Pygame, JSON</p>
-              <p class="work__desc">A Fruit Ninja-style 2D game with visual effects, built with object-oriented patterns and JSON for configuration and high scores.</p>
-            </li>
-
-            <!-- Placeholder: fill in, then remove `hidden` -->
-            <li class="work__item" hidden>
-              <h3 class="work__title">Lorem Ipsum</h3>
-              <p class="work__meta">Lorem ipsum · Lorem, Ipsum, Dolor</p>
-              <p class="work__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a class="text-link" href="#">GitHub</a>
-            </li>
-          </ul>
+          <a class="btn btn--icon" href="mailto:joseph.yewlett.careers@proton.me" aria-label="Email me" title="Email me">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M3.5 5.5h17v13h-17z M4 6l8 6.5L20 6"/></svg>
+          </a>
         </div>
       </div>
     </section>
@@ -263,6 +187,58 @@
               </div>
             </li>
           </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container split">
+        <h2 class="section__title" id="projects-title">Projects</h2>
+
+        <div class="section__body">
+          <ul class="work">
+            <li class="work__item">
+              <h3 class="work__title">Rediscovering particles using CERN LHC data</h3>
+              <p class="work__meta">Personal project · JupyterLab, Python, ROOT files</p>
+              <p class="work__desc">Using open data from CERN's LHC, I manipulated the data within a notebook to eventually produce clear graphs showing spikes representing specific masses in great accumulations. From this we can deduce different particles, including the Z boson.</p>
+              <a class="text-link" href="https://github.com/17JYewlett/cern_lhc_analysis" target="_blank" rel="noopener">View on GitHub</a>
+            </li>
+
+            <li class="work__item">
+              <h3 class="work__title">Verbatim iOS: an iOS app for language learning</h3>
+              <p class="work__meta">Personal project · Swift, Google Firebase, UI/UX design</p>
+              <p class="work__desc">As a continuation of my Android development journey, I decided to expand the application by fundamentally redesigning and redeveloping it for the Apple ecosystem. In the long term I would like to consider furthering this, but for now this was just a side project. An iOS application for learning languages via exposure. You can read approved ebooks in an interactive reader, and store unknown words as flashcards for later. The app also includes widgets, streaks, notification reminders, support for Apple's Liquid Glass design and more!</p>
+              <span class="work__private">Private repository</span>
+            </li>
+
+            <li class="work__item">
+              <h3 class="work__title">Verbatim: an Android app for language learning</h3>
+              <p class="work__meta">University project · Kotlin, Google Firebase, UI/UX design</p>
+              <p class="work__desc">An Android application for learning languages via exposure. You can read approved ebooks in an interactive reader, and store unknown words as flashcards for later. Works across devices thanks to Firebase.</p>
+              <span class="work__private">Private repository</span>
+            </li>
+
+            <li class="work__item">
+              <h3 class="work__title">Performance Hall Event Manager</h3>
+              <p class="work__meta">University project · Java, Swing, SWT</p>
+              <p class="work__desc">I developed an object-oriented GUI application to browse events, add tickets to a basket and complete purchases in a music hall system, learning how to create GUI applications in Java.</p>
+            </li>
+
+            <li class="work__item">
+              <h3 class="work__title">Fruit Frenzy</h3>
+              <p class="work__meta"><span>Personal project</span> · Python, Pygame, JSON</p>
+              <p class="work__desc">A Fruit Ninja-style 2D game with visual effects, built with object-oriented patterns and JSON for configuration and high scores.</p>
+            </li>
+
+            <!-- Placeholder: fill in, then remove `hidden` -->
+            <li class="work__item" hidden>
+              <h3 class="work__title">Lorem Ipsum</h3>
+              <p class="work__meta">Lorem ipsum · Lorem, Ipsum, Dolor</p>
+              <p class="work__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a class="text-link" href="#">GitHub</a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
